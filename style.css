@@ -2,40 +2,263 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
-body{
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
+@font-face {
+    font-family: 'graffiti';
+    src: url(fonts/aanothertag.otf), url(fonts/aanothertag.ttf);
+}
+
+@font-face {
+    font-family: 'graffiti-header';
+    src: url(fonts/next_bravo.otf), url(fonts/next_bravo.ttf);
 }
 
 header{
-    width: 100%;
-    height: 10rem;
-    background-color: gray;
-}
-
-footer{
-    background: gray;
-}
-
-
-li{
-    display: inline-block;
+    height: 11.95em;
+    background-image: url(images/bricks.jpeg);
     padding: 1em;
-    background-color: antiquewhite;
-    border: solid;
+    box-shadow: 0 2px 30px 0 rgb(0, 0, 0);
 }
 
-.rechts{
-    float: right;
-    padding-right: 7em;
+h1{
+    text-align: center;
+    color: antiquewhite;
+    font-size: 5em;
+    margin-bottom: 0.2em;
+    font-family: graffiti-header, sans-serif;
+    text-shadow: 
+    -4px -4px 0 rgb(105, 27, 27),  
+    4px -4px 0 rgb(105, 27, 27),
+    -4px 4px 0 rgb(105, 27, 27),
+    4px 4px 0 rgb(105, 27, 27);
+}
+
+nav{
+    text-align: center;
+}
+
+nav li{
+    display: inline-block;
     
 }
 
-article p:first-of-type{
+nav li a{
+    color: rgb(105, 27, 27);
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+    width: 13em;
+    padding: 1em;
+    margin-right: 1em;
+    background-color: antiquewhite;
+    border: 0.2em solid rgb(105, 27, 27);
+}
+
+nav li a:hover{
+    background-color: burlywood;
+    transform: scale(1.1);
+}
+
+nav li a:focus{
+    background-color: burlywood;
+    transform: scale(1.1);
+}
+
+nav li a:active{
+    transform: scale(0.95);
+}
+
+body{
+    background-image: url(images/beige_concrete.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+main{
+    margin: 2em 2em;
+}
+
+h2{
+    font-family: graffiti, sans-serif;
+    font-size: 4.5em;
+    letter-spacing: 0.08em;
+    color: rgb(60, 62, 62);
+}
+
+#h2{
+    margin: 0.2em 0em 0em 0.5em;
+}
+
+.h3{
+    margin-bottom: 0.7em;
+    margin-top: 0.7em;
+    font-size: xx-large;
+    color: rgb(60, 62, 62);
+}
+
+.h3-album{
+    font-size: xx-large;
+    color: rgb(60, 62, 62);
+}
+
+p{
+    font-size: large;
+}
+
+.txt{
     width: 50%;
-    margin: 1em;
+    font-size: x-large;
+}
+
+.center-txt{
+    font-size: x-large;
+}
+
+.center-txt2{
+    font-size: x-large;
+    margin: 0em 12em 4em 12em;
+}
+
+.flex{
+    display: flex;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.img{
+    border: 0.5em solid burlywood;
+    width: 40%;
+    height: 30%;
+}
+
+ main section .flex .txt{
+    margin-right: 3em;
+}
+
+#gangsta-img{
+    border: 0.5em solid burlywood;
+    object-fit: cover;
+    height: 60vh;
+    width: 40%;
+}
+
+#nieuws-h2{
+    text-align: center;
+    margin-top: 1.5em;
+}
+
+#nieuws{
+    display: flex;
+    justify-content: center;
+}
+.center{
+    text-align: center;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 30em;
+    height: 30em;
+    border: 0.5em solid burlywood;
+    overflow: hidden;
+    margin: 2em;
+    background-color: antiquewhite;
+}
+
+.card img{
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+}
+
+.card p{
+    padding: 1em;
+    text-align: center;
+}
+
+.card h3{
+    text-align: center;
+    padding-top: 1em;
+}
+
+.onderste{
+    margin-bottom: 5em;
+}
+
+footer{
+    background-image: url(images/bricks.jpeg);
+    color: antiquewhite;
+    height: 9em;
+    padding: 1em;
+    box-shadow: 0 2px 30px 0 rgb(0, 0, 0);
+}
+
+footer p{
+    font-size: 2em;
+}
+
+footer a{
+    color: antiquewhite;
+    font-size: xx-large;
+}
+
+footer div{
+    width: fit-content;
+}
+footer div:hover{
+    transform: scale(1.1);
+}
+
+footer a:hover{
+    color: burlywood;
+}
+
+footer div:focus{
+    transform: scale(1.1);
+}
+
+footer a:focus{
+    color: burlywood;
+}
+
+@media (max-width:956px){
+    header{
+    height: 14.6em;
+}
+}
+
+@media (max-width:840px){
+    .flex{
+    flex-direction: column;
+}
+    #nieuws{
+    flex-direction: column;
+}
+    .txt{
+    width: auto;
+    font-size: large;
+}
+    .img{
+    width: 70%;
+}
+    .center-txt2{
+    margin: 0;
+}
+}
+
+@media (max-width:600px){
+    .card{
+    width: auto;
+}
+    h1{
+    font-size: 4em;
+}
 }

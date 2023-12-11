@@ -9,51 +9,58 @@
 <body>
 
     <header>
-        <img src="#" alt="Logo van LyricLounge">
         <h1>LyricLounge</h1>
         <nav>
           <ul>  
             <li><a href="index.html">Home</a></li>
             <li><a href="genres.html">Genres</a></li>
-            <li><a href="#">Opkomende artiesten</a></li>
-            <li><a href="#">Albums</a></li>
+            <li><a href="opkomende-artiesten.html">Opkomende artiesten</a></li>
+            <li><a href="albums.html">Albums</a></li>
           </ul>
         </nav>
     </header>
 
     <main>
         <section>
-            <article>
-                <h2>Info</h2>
-                    <div class="rechts">
-                        <img class="rechts" src="images/xxxtentacion_foto.jpeg" alt="xxxtentacion hiphop concert" width="500px">
-                    </div>
-                    <p>Ben je op zoek naar het laatste hiphop nieuws? Of wil je meer informatie over je favoriete artiesten?
-                        Dan zit je hier goed, op LyricLounge delen we alles wat je moet weten over hiphop.
-                        Ontdek nieuwe subgenres en blijf op de hoogte van nieuwe projecten van jouw favoriete artiest!</p>
-            </article>
+            <h2 class="h2">Info</h2>
+            <div class="flex">
+                <p class="txt">Ben je op zoek naar het laatste hiphop nieuws? Of wil je meer informatie over je favoriete artiesten?
+                    Dan zit je hier goed, op LyricLounge delen we alles wat je moet weten over hiphop.
+                    Ontdek nieuwe subgenres en blijf op de hoogte van nieuwe projecten van jouw favoriete artiesten!</p>
+                    
+                <img class="img" src="images/xxxtentacion_foto.jpeg" alt="xxxtentacion hiphop concert">
+            </div>
         </section>
 
-        <section>
-            <h2>Nieuws</h2>
-            <img src="images/playboi_carti_antagonist_tour.jpeg" alt="Playboi Carti antagonist tour poster" width="500px">
-            <h3>Playboi Carti verplaatst tour</h3>
-            <p>Afgelopen donderdag <time datetime="2023-11-16">16 november</time> heeft playboi carti zijn "antagonist tour" verplaatst naar 2024.</p>
+        <h2 id="nieuws-h2">Nieuws</h2>
 
-            <img src="images/ski_mask_the_slump_god_foto.jpeg" alt="Foto van Ski mask the slump god" width="500px">
-            <h3>Ski kondigt nieuw album aan</h3>
-            <p>De 27 rapper ski mask the slump god uit florida heeft zijn vijfde studio ablum aangekondigt voor in December.</p>
-
-            <img src="images/Snoop_dogg_foto.avif" alt="Snoop dogg met een joint" width="500px">
-            <h3>Snoop Dogg stopt met wiet</h3>
-            <p>De 52 jarige Snoop dogg die bekend staat om het roken van wiet heeft op instagram aangekondigt te stoppen met de drug.</p>
+        <section id="nieuws">
+            <article class="card">
+                <img src="images/playboi_carti_antagonist_tour.jpeg" alt="Playboi Carti antagonist tour poster"> 
+                <h3>Playboi Carti verplaatst tour</h3>
+                <p>Afgelopen <time datetime="2023-11-16">donderdag 16 november</time> heeft playboi carti zijn "antagonist tour" verplaatst naar 2024.</p>
+            </article>    
+            
+            <article class="card">
+                <img src="images/ski_mask_the_slump_god_foto.jpeg" alt="Foto van Ski mask the slump god">
+                <h3>Ski kondigt nieuw album aan</h3>
+                <p> 27 rapper Ski Mask The Slump god uit florida heeft zijn vijfde studio ablum aangekondigt voor in December.</p>
+            </article>
+                
+            <article class="card">
+                <img src="images/Snoop_dogg_foto.jpeg" alt="Snoop dogg met een joint">
+                <h3>Snoop Dogg stopt met wiet</h3>
+                <p>De 52 jarige Snoop Dogg die bekend staat om het roken van wiet heeft op instagram aangekondigt te stoppen met de drug.</p>
+            </article>
         </section>
     </main>
 
     <footer>
         <p>Koen Janssen</p>
         <p>Klas Paars</p>
-        <a href="bronnen.html">bronnen</a>
+        <div>
+            <a href="bronnen.html">Bronnen</a>
+        </div>  
     </footer>
 </body>
 </html>
