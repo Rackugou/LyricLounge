@@ -7,12 +7,14 @@
 
 @font-face {
     font-family: 'graffiti';
-    src: url(fonts/aanothertag.otf), url(fonts/aanothertag.ttf);
+    src: url(fonts/dongraffiti.otf);
+    font-display: auto;
 }
 
 @font-face {
     font-family: 'graffiti-header';
     src: url(fonts/next_bravo.otf), url(fonts/next_bravo.ttf);
+    font-display: auto;
 }
 
 header{
@@ -208,24 +210,16 @@ footer p{
 footer a{
     color: antiquewhite;
     font-size: xx-large;
-}
-
-footer div{
-    width: fit-content;
-}
-footer div:hover{
-    transform: scale(1.1);
+    transition: all 200ms ease-in-out;
 }
 
 footer a:hover{
     color: burlywood;
-}
-
-footer div:focus{
-    transform: scale(1.1);
+    font-size: 2.5em;
 }
 
 footer a:focus{
+    font-size: 2.5em;
     color: burlywood;
 }
 
